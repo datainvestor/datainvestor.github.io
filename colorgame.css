@@ -32,7 +32,6 @@ h1 {
 	padding: 20px 0;
 }
 
-
 #stripe {
 	background-color: white;
 	text-align: center;
@@ -44,7 +43,6 @@ h1 {
 	color: white;
 	background: steelblue;
 }
-
 
 #colordisplay {
 	font-size: 200%;
@@ -74,37 +72,44 @@ button:hover {
 	background: steelblue;
 }
 
-#htp {
-	text-transform: uppercase;
-	font-weight: 700;
-	color: steelblue;
-	margin-left: 15px;
+ .side {
+  	float: right;
+    background:steelblue;
+    height:300px;
+    word-wrap:break-word;
+	max-width:200px;
+	border-radius: 15%;
+	border: solid white 2px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
 }
 
 
-.tooltip{display: inline;position:relative}
-.tooltip:hover{text-decoration:none}
+li {
+	color: white;
+	font-weight: normal;
+}
 
-.tooltip:focus:after{
- 	background: #333;
-    background: rgba(0,0,0,.8);
-    border-radius: 5px;
-    bottom: 26px;
-    color: #fff;
-    content: attr(title);
-    left: 20%;
-    padding: 5px 15px;
-    position: absolute;
-    z-index: 98;
-    width: 220px;
-  }
-.tooltip:focus:before{
-	border: solid;
-    border-color: #333 transparent;
-    border-width: 6px 6px 0 6px;
-    bottom: 20px;
-    content: "";
-    left: 50%;
-    position: absolute;
-    z-index: 99;
-   }
+.blank {
+	color: #232323;
+	background: #232323;
+	border-color: #232323;
+	transition: all 0.3s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+}
+
+.blank2{
+	color: #232323;
+	transition: all 0.3s;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+}
+
+.title {
+	color:#232323;
+	font-weight: bold;
+	text-align: center;
+}
+
