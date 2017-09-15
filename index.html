@@ -1,44 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Color Game</title>
-	<link rel="stylesheet" type="text/css" href="colorgame.css">
+    <title>Color Game</title>
+    <link rel="stylesheet" type="text/css" href="colorgame.css">
 </head>
 <body>
 <h1>
-	The Great 
-	<br>
-	<span id="colordisplay">RGB</span> 
-	<br>
-	Color Game</h1>
+    The Great
+    <br>
+    <span id="colordisplay">RGB</span>
+    <br>
+    Color Game</h1>
 
 <div id="stripe">
-	<button id="reset">New Colors</button>
-	<span id="message"></span>
-	<button class="mode">Easy</button>
-	<button class="mode selected">Hard</button>
-	<button class="htp">How to play?</button>
+    <button id="reset">New Colors</button>
+    <span id="message"></span>
+    <button class="mode">Easy</button>
+    <button class="mode selected">Hard</button>
+    <button class="htp">How to play?</button>
 </div>
 
-	<div id="container">
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-		<div class="square"></div>
-	</div>
+<div id="container">
 
-	<div class="side blank">
-		<p class="title">How to play?</p>
-		<ul>
-			<li class="blank2">To win: pick matching RGB Color</li>
-			<br>
-			<li class="blank2">To restart press "New Game"</li>
-			<br>
-			<li class="blank2">You can change difficulty from Easy to Hard</li>
-		</ul>
-	</div>	
+    <div class="one">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <div class="two">
+        <div class="side blank">
+            <p class="title">How to play?</p>
+            <ul>
+                <li class="blank2">To win: pick matching RGB Color</li>
+                <br>
+                <li class="blank2">To restart press "New Game"</li>
+                <br>
+                <li class="blank2">You can change difficulty from Easy to Hard</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
 
 
 <script type="text/javascript" src="colorgame.js"></script>
