@@ -239,18 +239,36 @@
 	    if (keyData.d.pressed && keyData.r.pressed && keyData.o.pressed && keyData.p.pressed) {
 	    	if(enabled==true){
 	    	alert('Yo Skrill Drop it HARD')
-			$('body').css('background-image', 'url(https://i.ytimg.com/vi/eV2uVC0PkLQ/maxresdefault.jpg)')
-			//$('body').html('<h1>YO</h1>')
+			//$('body').css('background', 'linear-gradient(to right, #f1f2b5, #135058)')
+			$('body').html('<ul class="text-animation hidden"> '+
+				'<li>O</li> '+
+				'<li>L</li> '+
+				'<li>E</li> '+
+				'<li>K</li> '+
+				'<li></li> '+
+				'<li>T</li> '+
+				'<li>R</li> '+
+				'<li>I</li> '+
+				'<li>N</li> '+
+				'<li>H</li> '+
+				'</ul>'
+				)
+				$(function() {
+			setTimeout(function(){
+				$('.text-animation').removeClass('hidden');
+			}, 500)
+				})
 			skrillo.play()
     		enabled=false;
 		}}
 	});
+
+
 
 	</script>
 
 </head>
 <body>
 	<canvas id="myCanvas" resize></canvas>
-
 </body>
 </html>
