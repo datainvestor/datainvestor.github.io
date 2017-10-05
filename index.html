@@ -238,9 +238,11 @@
 
 	    if (keyData.d.pressed && keyData.r.pressed && keyData.o.pressed && keyData.p.pressed) {
 	    	if(enabled==true){
-	    	alert('Yo Skrill Drop it HARD')
+	    	enabled=false;
 			//$('body').css('background', 'linear-gradient(to right, #f1f2b5, #135058)')
-			$('body').html('<ul class="text-animation hidden"> '+
+			$(function() {
+			setTimeout(function(){
+				$('body').html('<ul class="text-animation hidden"> '+
 				'<li>O</li> '+
 				'<li>L</li> '+
 				'<li>E</li> '+
@@ -253,13 +255,18 @@
 				'<li>H</li> '+
 				'</ul>'
 				)
-				$(function() {
-			setTimeout(function(){
-				$('.text-animation').removeClass('hidden');
 			}, 500)
 				})
+		
+			$(function() {
+			setTimeout(function(){
+				$('.text-animation').removeClass('hidden');
+			}, 900)
+				})
+
+
 			skrillo.play()
-    		enabled=false;
+    		
 		}}
 	});
 
